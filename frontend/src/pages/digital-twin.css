@@ -1,0 +1,34 @@
+.twin-heading { display:flex; justify-content:space-between; align-items:flex-start; gap:24px; margin:38px 0 26px; }
+.twin-data-trust { display:flex; flex-wrap:wrap; align-items:center; gap:9px 15px; margin-top:12px; padding:12px 16px; border:1px solid #5c684f; border-radius:5px; background:#202923; font-size:11px; }.twin-data-trust strong { color:#e2be7d; font:10px 'IBM Plex Mono',Consolas,monospace; }.twin-data-trust span { color:#c7dfcc; font-weight:700; }.twin-data-trust p { margin:0; color:#abbcb1; flex:1; }.twin-data-trust a { color:#e9c68c; }.twin-sensor-note { color:#ecc387; border-left:3px solid #d4a35c; padding-left:10px; font-size:11px; line-height:1.5; }
+.twin-context { display:flex; justify-content:space-between; gap:24px; padding:18px 22px; border:1px solid #36434a; border-radius:7px; background:#1b2226; }
+.twin-context > div:first-child { display:grid; gap:7px; }
+.twin-context strong { color:#e6c185; font:700 12px 'IBM Plex Mono',Consolas,monospace; }
+.twin-context span { color:#b2bdc3; font-size:12px; line-height:1.5; }
+.twin-context-stale,.twin-context-disconnected { border-color:#8d6643; }
+.twin-run { text-align:right; display:grid; gap:4px; min-width:0; }
+.twin-run strong { overflow-wrap:anywhere; }
+.twin-layout { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(300px,.8fr); gap:18px; margin-top:18px; }
+.twin-map,.twin-detail { border:1px solid #333c42; border-radius:8px; background:#181e23; padding:24px; min-width:0; }
+.twin-core { display:flex; align-items:center; justify-content:center; gap:9px; color:#d5dee0; border-bottom:1px solid #303b40; margin-bottom:20px; padding-bottom:14px; }
+.twin-core svg { width:74px; height:60px; }.twin-core strong { letter-spacing:.15em; font-size:13px; }.twin-core small { color:#8c9ca4; font-size:11px; }
+.twin-card-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.twin-map .rocket-diagram { margin-bottom:18px; }
+.twin-card-shell { display:flex; flex-direction:column; gap:6px; min-width:0; }.twin-card-alert-link { color:#e9c489; font-size:11px; padding:0 4px; }
+.twin-card { text-align:left; display:grid; flex:1; gap:13px; padding:19px; border:1px solid #39464b; border-left:4px solid #85939a; border-radius:6px; color:#ebf0f1; background:#20272c; cursor:pointer; min-width:0; }
+.twin-card:hover,.twin-card.selected { background:#263038; border-top-color:#b0bdc3; border-right-color:#b0bdc3; border-bottom-color:#b0bdc3; }
+.twin-card-heading,.twin-card-status { display:flex; align-items:center; gap:10px; }.twin-card-heading strong { font-size:15px; }
+.twin-card-status { font:700 12px 'IBM Plex Mono',Consolas,monospace; }
+.twin-normal { border-left-color:#81b99b; }.twin-normal .twin-card-status,.twin-detail-status.twin-normal { color:#a5d7b8; }
+.twin-warning { border-left-color:#d9a654; }.twin-warning .twin-card-status,.twin-detail-status.twin-warning { color:#e9c489; }
+.twin-critical { border-left-color:#d47671; }.twin-critical .twin-card-status,.twin-detail-status.twin-critical { color:#edaaa5; }
+.twin-unknown { border-left-color:#829198; }.twin-unknown .twin-card-status,.twin-detail-status.twin-unknown { color:#aebcc1; }
+.twin-card-readings { display:grid; gap:6px; }.twin-card-readings span { display:flex; justify-content:space-between; gap:8px; color:#aebbc1; font-size:11px; }.twin-card-readings b { color:#e3e9e9; font-weight:600; white-space:nowrap; }
+.twin-card small,.twin-card-alert { color:#a9b7bd; font-size:10px; line-height:1.5; }.twin-card-alert { color:#e9c489; }
+.twin-detail h2 { font-size:25px; margin:0 0 13px; }.twin-detail-status { font:700 13px 'IBM Plex Mono',Consolas,monospace; }
+.twin-detail-note { color:#acb9be; font-size:12px; line-height:1.6; }.twin-detail dl { margin:22px 0; }.twin-detail dl div { display:flex; justify-content:space-between; gap:16px; padding:10px 0; border-bottom:1px solid #333e43; font-size:12px; }.twin-detail dt { color:#9babb2; }.twin-detail dd { margin:0; text-align:right; color:#edf1f1; }
+.twin-detail h3 { font-size:13px; color:#d4dddf; }.twin-detail ul { color:#c1ced1; font-size:11px; line-height:1.6; padding-left:17px; }.twin-detail li+li { margin-top:8px; }.twin-detail a { color:#e5bd79; }
+@media(max-width:1120px) { .twin-layout { grid-template-columns:1fr; } }
+@media(max-width:650px) { .twin-heading,.twin-context { flex-direction:column; }.twin-run { text-align:left; }.twin-card-grid { grid-template-columns:1fr; }.twin-map,.twin-detail { padding:17px; } }
+
+.twin-card-data-invalid { display:block; padding:8px 10px; border:1px solid #b57956; border-radius:4px; color:#f0bc97; background:#392720; font-size:11px; font-weight:700; line-height:1.4; }
+.twin-card-data-unknown { display:block; padding:8px 10px; border:1px solid #7d7370; border-radius:4px; color:#c9c5c1; background:#29292a; font-size:11px; line-height:1.4; }

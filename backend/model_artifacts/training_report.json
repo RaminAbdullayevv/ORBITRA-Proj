@@ -1,0 +1,91 @@
+{
+  "model_version": "iforest-normal-v1",
+  "threshold_fixed_from_calibration": 0.6247,
+  "normal_holdout": [
+    {
+      "seed": 901,
+      "reduce_at": null,
+      "false_alerts": 0,
+      "alert_sequences": []
+    },
+    {
+      "seed": 901,
+      "reduce_at": 45,
+      "false_alerts": 0,
+      "alert_sequences": []
+    },
+    {
+      "seed": 902,
+      "reduce_at": null,
+      "false_alerts": 0,
+      "alert_sequences": []
+    },
+    {
+      "seed": 902,
+      "reduce_at": 45,
+      "false_alerts": 0,
+      "alert_sequences": []
+    },
+    {
+      "seed": 903,
+      "reduce_at": null,
+      "false_alerts": 0,
+      "alert_sequences": []
+    },
+    {
+      "seed": 903,
+      "reduce_at": 45,
+      "false_alerts": 0,
+      "alert_sequences": []
+    },
+    {
+      "seed": 904,
+      "reduce_at": null,
+      "false_alerts": 0,
+      "alert_sequences": []
+    },
+    {
+      "seed": 904,
+      "reduce_at": 45,
+      "false_alerts": 0,
+      "alert_sequences": []
+    }
+  ],
+  "anomaly_holdout": [
+    {
+      "seed": 1001,
+      "detected": true,
+      "first_alert_sequence": 22,
+      "delay_seconds_from_t8": 14
+    },
+    {
+      "seed": 1002,
+      "detected": true,
+      "first_alert_sequence": 22,
+      "delay_seconds_from_t8": 14
+    },
+    {
+      "seed": 1003,
+      "detected": true,
+      "first_alert_sequence": 22,
+      "delay_seconds_from_t8": 14
+    },
+    {
+      "seed": 1004,
+      "detected": true,
+      "first_alert_sequence": 22,
+      "delay_seconds_from_t8": 14
+    }
+  ],
+  "true_synthetic_events": 4,
+  "detected_synthetic_events": 4,
+  "missed_synthetic_events": 0,
+  "false_alerts": 0,
+  "detection_delay_seconds": [
+    14,
+    14,
+    14,
+    14
+  ],
+  "scope": "Ayrı sintetik simulator sessiyaları; real aparat dəqiqliyi deyil."
+}

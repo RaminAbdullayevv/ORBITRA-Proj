@@ -1,0 +1,21 @@
+.login-screen { min-height: 100vh; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 30px; background: radial-gradient(circle at 50% 10%, #293036, #101317 63%); }
+.login-brand { display: flex; align-items: center; gap: 14px; margin-bottom: 36px; }
+.login-brand strong { display: block; letter-spacing: .2em; font-size: 23px; }
+.login-brand small { color: #8a969e; font: 10px 'IBM Plex Mono', Consolas, monospace; letter-spacing: .18em; }
+.login-card { width: min(100%, 540px); padding: 36px; border: 1px solid #414b4e; border-radius: 8px; background: #181e22; box-shadow: 0 24px 80px #0005; }
+.login-icon { width: 54px; height: 54px; display: grid; place-items: center; border: 1px solid #6e5731; color: #d7a552; border-radius: 7px; margin-bottom: 28px; }
+.login-card h1 { font-size: 35px; }
+.login-card > p:not(.eyebrow) { color: #a8b2b8; font-size: 13px; line-height: 1.65; }
+.login-card .login-description { font-size: 12px !important; color: #87969d !important; }
+.login-card .login-tagline { color: #d8bd8e !important; }
+.login-card form { display: grid; gap: 17px; margin-top: 28px; }
+.login-card label { display: grid; gap: 8px; color: #c5cdcf; font-size: 12px; }
+.login-card input { height: 44px; border: 1px solid #465057; border-radius: 4px; padding: 0 12px; background: #11161a; color: #f0f2f1; font: inherit; }
+.login-card input:focus-visible,.login-card button:focus-visible { outline:2px solid #e5b665; outline-offset:2px; }
+.login-card form button { height: 44px; margin-top: 5px; border: 0; border-radius: 4px; background: #d7a552; color: #141719; font-weight: 700; cursor: pointer; }
+.login-card form button:disabled { opacity: .55; cursor: wait; }
+.login-error { color: #efb6a2 !important; }
+.login-offline { margin-top: 18px; padding: 12px; border: 1px solid #79574b; color: #efb6a2; font-size: 12px; }
+.login-offline button { margin-left: 8px; color: #efc595; background: none; border: 0; text-decoration: underline; cursor: pointer; }
+.login-foot { display: flex; align-items: center; gap: 9px; margin-top: 28px; color: #8a959c; font: 10px 'IBM Plex Mono', Consolas, monospace; }
+.login-foot span { margin-left: 15px; color: #d7a552; }

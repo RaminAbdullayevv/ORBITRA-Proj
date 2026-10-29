@@ -1,0 +1,61 @@
+.security-page { padding-bottom: 45px; }
+.security-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin: 43px 0 28px; }
+.security-heading .page-description { max-width: 760px; }
+.security-run { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, .75fr) minmax(0, .8fr); margin-bottom: 17px; border: 1px solid #343b41; border-radius: 5px; background: #171b20; }
+.security-run > div { min-width: 0; padding: 18px 20px; border-right: 1px solid #30373d; }
+.security-run > div:last-child { border-right: 0; }
+.security-run span, .security-rejection-list dt { display: block; margin-bottom: 8px; color: #82909a; font: 9px 'IBM Plex Mono', Consolas, monospace; letter-spacing: .1em; }
+.security-run strong, .security-rejection-list dd { display: block; overflow-wrap: anywhere; color: #e2e8e9; font: 11px 'IBM Plex Mono', Consolas, monospace; }
+.security-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
+.security-card { min-width: 0; padding: 19px; border: 1px solid #3f514c; border-radius: 5px; background: #171b20; }
+.security-rejected { border-color: #795b4d; }
+.security-card-heading { display: flex; align-items: center; gap: 9px; color: #a9c9ad; }
+.security-rejected .security-card-heading { color: #ddb690; }
+.security-card-heading h2 { flex: 1; margin: 0; color: #e5eaea; font-size: 15px; }
+.security-card-heading span { font: 9px 'IBM Plex Mono', Consolas, monospace; }
+.security-card > p { margin: 12px 0 18px; color: #9eacb2; font-size: 11px; line-height: 1.55; }
+.security-empty { padding: 21px; border: 1px dashed #415057; border-radius: 4px; color: #9eacb2; font-size: 11px; }
+.security-sample-list, .security-rejection-list { margin: 0; padding: 0; list-style: none; }
+.security-sample-list li { display: flex; justify-content: space-between; gap: 10px; padding: 10px 0; border-top: 1px solid #303a3f; color: #a9b7bc; font: 10px 'IBM Plex Mono', Consolas, monospace; }
+.security-sample-list strong { color: #b9d4bc; }
+.security-rejection-list li { margin-top: 10px; padding: 15px; border: 1px solid #795b4d; border-radius: 4px; background: #292320; }
+.security-rejection-list li > strong { color: #f0c5a4; font-size: 12px; }
+.security-rejection-list li > p { margin: 9px 0 15px; color: #dbc0ad; font-size: 11px; }
+.security-rejection-list dl { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0; }
+.security-rejection-list dd { margin: 0; }
+.security-history { margin-top: 16px; }
+.security-incident-list, .security-audit-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.security-incident, .security-audit-list li { padding: 17px; background: #20272b; border: 1px solid #38444a; border-radius: 5px; }
+.security-incident-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #edf0f0; font-size: 13px; }
+.security-incident-top span { font: 9px 'IBM Plex Mono', Consolas, monospace; letter-spacing: .08em; }
+.security-open { color: #e2ad7b; } .security-closed { color: #a9c9ad; }
+.security-incident > p { color: #c0c9cc; font-size: 12px; line-height: 1.55; }
+.security-incident > small, .security-notes small, .security-audit-list small { display: block; color: #8c9aa2; font: 10px 'IBM Plex Mono', Consolas, monospace; line-height: 1.6; overflow-wrap: anywhere; }
+.security-notes { margin-top: 17px; padding: 14px; border-left: 2px solid #8daea1; background: #192124; }
+.security-notes > strong { color: #d4dfdc; font-size: 11px; }
+.security-notes p { margin: 10px 0 0; color: #dce5e2; font-size: 12px; line-height: 1.5; }
+.security-notes small { margin-top: 5px; }
+.security-decision { padding: 12px; background: #203127; border: 1px solid #4e725d; border-radius: 4px; }
+.security-review { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; margin-top: 16px; }
+.security-review form { display: grid; gap: 9px; align-content: start; }
+.security-review label { display: grid; gap: 7px; color: #bdc9ce; font-size: 11px; }
+.security-review textarea, .security-review input { width: 100%; min-height: 38px; padding: 9px; border: 1px solid #4b585e; border-radius: 4px; color: #eef1f1; background: #151b1f; font: inherit; }
+.security-review textarea { min-height: 65px; resize: vertical; }
+.security-review button { justify-self: start; border: 1px solid #91764b; background: #352d20; color: #efc791; padding: 8px 12px; border-radius: 4px; cursor: pointer; }
+.security-review button:disabled { opacity: .45; cursor: not-allowed; }
+.security-error { color: #efad9a !important; }
+.security-audit-list li { display: grid; grid-template-columns: minmax(130px, 1fr) minmax(130px, 1fr) minmax(0, 3fr); gap: 14px; align-items: start; }
+.security-audit-list strong { color: #dfe7e3; font-size: 11px; }
+.security-audit-list span { color: #bdc6cb; font: 10px 'IBM Plex Mono', Consolas, monospace; }
+@media (max-width: 900px) { .security-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .security-heading { align-items: flex-start; flex-direction: column; } .security-run, .security-review, .security-audit-list li { grid-template-columns: 1fr; } .security-run > div { border-right: 0; border-bottom: 1px solid #30373d; } .security-rejection-list dl { grid-template-columns: 1fr; } }
+
+.security-incident-detail { margin-top:14px; padding:12px 14px; border:1px solid #596b66; border-radius:5px; background:#192427; color:#c6d4d3; font-size:11px; line-height:1.55; }
+.security-incident-detail summary { cursor:pointer; color:#e9c68c; font-weight:700; }
+.security-incident-detail p { overflow-wrap:anywhere; }
+.security-detail-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:12px; }
+.security-detail-grid section { padding:10px; border:1px solid #394e4f; border-radius:4px; }
+.security-detail-grid h3 { margin:0 0 7px; color:#edf1ed; font-size:11px; }
+.security-detail-grid ul { margin:0; padding-left:16px; }
+.security-incident-detail a { color:#f0cb92; }
+@media(max-width:900px) { .security-detail-grid { grid-template-columns:1fr; } }
